@@ -5,12 +5,11 @@
     <script type="text/javascript">
         $.ajax({
             type: 'GET',
-            url: 'http://api.appwall.affise.com/2.1/stats/getbyprogram',
-            headers: { 'Accept': 'application/json', 'API-Key': 'a79fcf4ce9e76c23ef5a469916b1a3a9dcbbba61' }
-        }).done(function (data) {
-        alert(data);});
-
-    
+            url: 'http://offers.appwall.affise.com/setting/domains',
+            headers: { 'API-Key': 'a79fcf4ce9e76c23ef5a469916b1a3a9dcbbba61', 'Content-Type': 'application/x-www-form-urlencoded' },
+            success: function() { document.write('success'); }
+        });
+        
     </script>   
     </head>
     
